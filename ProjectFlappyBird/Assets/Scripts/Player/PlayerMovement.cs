@@ -18,14 +18,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.V))
         {
-            Debug.Log("pressed");
             Jump();
         }
     }
 
     public void Jump()
     {
-        Debug.Log("jump");
         rigidbody2.velocity = Vector2.up * jumpForce;
     }
 

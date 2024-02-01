@@ -28,7 +28,6 @@ public class SpawningObstacles : MonoBehaviour
 
     private IEnumerator Spawning()
     {
-        Debug.Log("spawn");
         asSpawn = false;
         yield return new WaitForSecondsRealtime(timeBetweenSpawn);
         var parentPosition = spawner.gameObject.transform.position;
@@ -43,7 +42,6 @@ public class SpawningObstacles : MonoBehaviour
 
     private IEnumerator FirstSpawn()
     {
-        Debug.Log("firstspawn");
         yield return new WaitForSecondsRealtime(firstSpawn);
         asSpawn = true;
     }

@@ -21,7 +21,6 @@ public class Obstacles : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("entered");
             uiManager.ScoreChanger();
         }
     }
